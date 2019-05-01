@@ -1,9 +1,6 @@
 ---
 grafana::install_method: 'repo'
 grafana::cfg_location: '/usr/local/etc/grafana.conf'
-grafana::cfg:
-  paths:
-    logs: '/var/log/grafana/'
 grafana::data_dir: '/var/db/grafana/'
 grafana::install_dir: '/usr/local/share/grafana'
 grafana::package_name: 'grafana5'
