@@ -1,0 +1,10 @@
+---
+grafana::install_method: 'repo'
+grafana::cfg_location: '/usr/local/etc/grafana/grafana.conf'
+grafana::data_dir: '/var/db/grafana/'
+grafana::install_dir: '/usr/local/share/grafana'
+grafana::package_name: 'grafana5'
+grafana::service_name: 'grafana'
+grafana::provisioning_dashboards_file: '/var/db/grafana/provisioning/dashboards/puppetprovisioned.yaml'
+grafana::provisioning_datasources_file: '/var/db/grafana/provisioning/datasources/puppetprovisioned.yaml'
+grafana::create_subdirs_provisioning: true

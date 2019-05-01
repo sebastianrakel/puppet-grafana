@@ -143,6 +143,12 @@ class grafana::install {
             name   => $grafana::package_name,
           }
         }
+        'FreeBSD': {
+          package { 'grafana':
+            ensure  => $grafana::version,
+            name    => $grafana::package_name,
+          }
+        }
         default: {
           fail("${facts['os']['name']} not supported")
         }
